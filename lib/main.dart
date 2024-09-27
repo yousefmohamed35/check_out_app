@@ -22,7 +22,7 @@ class CheckOutApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      home: MyCartView(),
+      home: const MyCartView(),
     );
   }
 }

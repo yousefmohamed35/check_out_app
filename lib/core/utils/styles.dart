@@ -31,4 +31,10 @@ abstract class Styles {
     color: Colors.black.withOpacity(0.80000),
     fontFamily: 'Inter',
   );
+  static TextStyle textStyle22 = const TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+    fontFamily: 'Inter',
+  );
 }
