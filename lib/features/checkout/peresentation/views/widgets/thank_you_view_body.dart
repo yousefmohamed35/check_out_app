@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'custom_check_icon.dart';
 import 'custom_dashed_line.dart';
 import 'thank_you_card.dart';
@@ -35,7 +34,7 @@ class ThankYouViewBody extends StatelessWidget {
               backgroundColor: Colors.white,
             ),
           ),
-          Positioned(
+        const  Positioned(
             left: 0,
             right: 0,
             top: -50,
