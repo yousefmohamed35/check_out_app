@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:paymentapp/core/utils/styles.dart';
+import 'package:paymentapp/features/checkout/peresentation/views/widgets/total_price_item.dart';
+import 'card_info_widget.dart';
 import 'payment_item_info.dart';
 
 class ThankYouCard extends StatelessWidget {
@@ -45,6 +47,13 @@ class ThankYouCard extends StatelessWidget {
               title: 'To',
               value: 'Ganona',
             ),
+            const Divider(
+              thickness: 2,
+              height: 60,
+            ),
+            const TotlePriceItem(title: 'Total', value: r'$50.89'),
+            const SizedBox(height: 30),
+           const CardInfoWidget()
           ],
         ),
       ),
