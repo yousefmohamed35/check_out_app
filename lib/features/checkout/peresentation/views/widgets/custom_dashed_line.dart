@@ -22,4 +22,3 @@ class CustomDashedLine extends StatelessWidget {
     );
   }
 }
-

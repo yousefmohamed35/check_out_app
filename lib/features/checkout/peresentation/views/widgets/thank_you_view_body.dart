@@ -13,12 +13,12 @@ class ThankYouViewBody extends StatelessWidget {
       child: Stack(
         clipBehavior: Clip.none,
         children: [
-         const ThankYouCard(),
+          const ThankYouCard(),
           Positioned(
             left: 28,
             right: 28,
             bottom: MediaQuery.sizeOf(context).height * .2 + 20,
-            child:const CustomDashedLine(),
+            child: const CustomDashedLine(),
           ),
           Positioned(
             left: -20,
@@ -34,7 +34,7 @@ class ThankYouViewBody extends StatelessWidget {
               backgroundColor: Colors.white,
             ),
           ),
-        const  Positioned(
+          const Positioned(
             left: 0,
             right: 0,
             top: -50,
@@ -45,4 +45,3 @@ class ThankYouViewBody extends StatelessWidget {
     );
   }
 }
-
