@@ -1,6 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_stripe/flutter_stripe.dart';
-
 import 'package:paymentapp/core/errors/failures.dart';
 import 'package:paymentapp/core/utils/stripe_service.dart';
 
