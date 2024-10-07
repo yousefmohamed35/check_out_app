@@ -8,12 +8,11 @@ import 'package:paymentapp/features/checkout/peresentation/views/my_cart_view.da
 void main() {
   Stripe.publishableKey = ApiKeys.publishableKey;
   runApp(
-    // DevicePreview(
-    //   enabled: !kReleaseMode,
-    //   builder: (context) => const CheckOutApp(), // Wrap your app
-    // ),
-    const CheckOutApp()
-  );
+      // DevicePreview(
+      //   enabled: !kReleaseMode,
+      //   builder: (context) => const CheckOutApp(), // Wrap your app
+      // ),
+      const CheckOutApp());
 }
 
 class CheckOutApp extends StatelessWidget {

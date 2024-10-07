@@ -12,13 +12,12 @@ class PaymentMethodsBottomSheet extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-           SizedBox(height: 16.0),
-           PaymentMethodsListView(),
-           SizedBox(height: 32.0),
+          SizedBox(height: 16.0),
+          PaymentMethodsListView(),
+          SizedBox(height: 32.0),
           CustomButtonBlocConsumer(),
         ],
       ),
     );
   }
 }
-
