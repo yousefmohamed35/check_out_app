@@ -18,6 +18,17 @@ class StripeService {
     return PaymentIntentModel.fromJson(response.data);
   }
 
+   Future<PaymentIntentModel> createCustomer(
+      PaymentIntentInputModel paymentIntentInputModel) async {
+    var response = await apiService.post(
+      body: paymentIntentInputModel.toJson(),
+      url: 'https://api.stripe.com/v1/payment_intents',
+      token: ApiKeys.secretKey,
+      contentType: Headers.formUrlEncodedContentType,
+    );
+    return PaymentIntentModel.fromJson(response.data);
+  }
+
   Future initPaymentSheet({required String paymentIntentClientSecret}) async {
     await Stripe.instance.initPaymentSheet(
       paymentSheetParameters: SetupPaymentSheetParameters(
