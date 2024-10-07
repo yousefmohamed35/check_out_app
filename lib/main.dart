@@ -8,10 +8,11 @@ import 'package:paymentapp/features/checkout/peresentation/views/my_cart_view.da
 void main() {
   Stripe.publishableKey = ApiKeys.publishableKey;
   runApp(
-    DevicePreview(
-      enabled: !kReleaseMode,
-      builder: (context) => const CheckOutApp(), // Wrap your app
-    ),
+    // DevicePreview(
+    //   enabled: !kReleaseMode,
+    //   builder: (context) => const CheckOutApp(), // Wrap your app
+    // ),
+    const CheckOutApp()
   );
 }
 
@@ -21,9 +22,9 @@ class CheckOutApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      useInheritedMediaQuery: true,
-      locale: DevicePreview.locale(context),
-      builder: DevicePreview.appBuilder,
+      // useInheritedMediaQuery: true,
+      // locale: DevicePreview.locale(context),
+      // builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       home: const MyCartView(),
     );

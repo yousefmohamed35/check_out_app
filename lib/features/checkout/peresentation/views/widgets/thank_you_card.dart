@@ -33,27 +33,27 @@ class ThankYouCard extends StatelessWidget {
               'Your transaction was successful',
               style: Styles.textStyle20,
             ),
-            const SizedBox(height: 42),
+            const SizedBox(height: 20),
             const PaymentItemInfo(
               title: 'Date',
               value: '02/10/2024',
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const PaymentItemInfo(
               title: 'Time',
               value: '10:45 Am',
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const PaymentItemInfo(
               title: 'To',
               value: 'Ganona',
             ),
             const Divider(
               thickness: 2,
-              height: 60,
+              height: 30,
             ),
             const TotlePriceItem(title: 'Total', value: r'$50.89'),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             const CardInfoWidget(),
             const Spacer(),
             Row(

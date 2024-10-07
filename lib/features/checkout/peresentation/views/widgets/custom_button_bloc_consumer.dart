@@ -23,6 +23,7 @@ class CustomButtonBlocConsumer extends StatelessWidget {
           );
         }
         if (state is PaymentFailure) {
+          Navigator.pop(context);
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(state.errorMessage),
